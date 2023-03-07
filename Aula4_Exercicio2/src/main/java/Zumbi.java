@@ -14,13 +14,14 @@ public class Zumbi {
         if (quantia <= vida) {
             zumbiAlvo.vida += quantia;
             vida -= quantia;
-            transfere = true;
             System.out.println("A transferencia foi realizada");
-            return transfere;
+
+            return true;
+
         } else {
-            transfere = false;
             System.out.println("A transferencia nao foi realizada");
-            return transfere;
+
+            return false;
         }
     }
 }

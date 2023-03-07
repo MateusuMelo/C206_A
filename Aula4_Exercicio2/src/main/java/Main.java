@@ -6,10 +6,6 @@ public class Main {
         cris.vida = 100;
         ana.vida = 50;
 
-        ana.TransfereVida(cris,60);
-        ana.MostraVida();
-
         ana.TransfereVida(cris,50);
-        ana.MostraVida();
     }
 }
