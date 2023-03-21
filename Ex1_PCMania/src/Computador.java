@@ -1,6 +1,7 @@
 public class Computador {
     String marca;
     float preco;
+    MemoriaUSB memoriaUSB;
     HardwareBasico[] hardware = new HardwareBasico[3]; // Array que contem os principais tipos de hardware. [0] = Processador, [1] Memoria Ram, [2]Armazenamento
     SistemaOPeracional sistemaOperacional;
 
@@ -35,10 +36,12 @@ public class Computador {
                 System.out.println(hardware[i].capacidade + " Gb/s");
             }
         }
+        System.out.println("Memoria Usb: ");
+        System.out.println(memoriaUSB.nome + " de " + memoriaUSB.capacidade + " Gb");
     }
 
     void addMemoriaUSB(MemoriaUSB musb) {
-        musb = new MemoriaUSB();
+        memoriaUSB = musb;
 
     }
 }
