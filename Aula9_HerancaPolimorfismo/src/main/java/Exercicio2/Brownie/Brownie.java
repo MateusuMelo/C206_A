@@ -1,3 +1,5 @@
+package Exercicio2.Brownie;
+
 public class Brownie {
     protected String nome;
     protected double preco;
@@ -7,5 +9,8 @@ public class Brownie {
         this.nome = nome;
         this.preco = preco;
         this.sabor = sabor;
+    }
+
+    public void addCarrinhoDeCompras() {
     }
 }
