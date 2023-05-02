@@ -1,4 +1,4 @@
-public abstract class Bolo implements Comparable<Integer> {
+public abstract class Bolo implements Comparable<Bolo> {
     String nome;
     int id;
 
@@ -7,12 +7,7 @@ public abstract class Bolo implements Comparable<Integer> {
         this.id = id;
     }
     @Override
-    public int compareTo(Object o) {
-        if (this.id < 0.id){
-            return 1;
-        } else if (this.id > o.id) {
-            return -1;
-        }
-        return 0;
+    public int compareTo(Bolo o) {
+        return  Integer.compare(o.id, this.id);
     }
 }
